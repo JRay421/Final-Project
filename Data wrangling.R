@@ -38,6 +38,8 @@ print(lin_reg1)
 summary(lin_reg)
 summary(lin_reg1)
 
+#Both p-values are significant.  Adjusted R-square value is 60% for concave points mean and 48% for concavity mean.  It appears the concave points mean has a bigger impact.
+
 
 
 
