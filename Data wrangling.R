@@ -123,6 +123,120 @@ logi.hist.plot(BC$smoothness_mean,BC$diagnosisR, boxp=FALSE, type="hist", col="g
 #End Sarah's work#
 ###
 
+#Candy's Binary Logistic Regression with confusion matrixs
+#Load libraries
+
+library("dplyr")
+library("ggplot2")
+library("caret")
+library("IDPmisc")
+library("magrittr")
+library("dplyr")
+library("tidyr")
+library("lmtest")
+library("popbio")
+library("e1071")
+library("zoo")
+
+#Select variables that you want to keep
+BC <- dplyr:: select(breast_cancer, c(diagnosis,area_mean, smoothness_mean, compactness_mean, symmetry_mean, concave_points_mean, concavity_mean))
+
+#Change to binary
+BC$diagnosisR <- NA
+BC$diagnosisR[BC$diagnosis=='1'] <- 1
+BC$diagnosisR[BC$diagnosis=='0'] <- 0
+summary(BC)
+
+#Remove missing Variables
+BC$diagnosisR <- as.numeric(BC$diagnosisR)
+summary(BC)
+
+#Predict diagnosis and recode predicted variables
+logit <- glm(diagnosisR ~ concave_points_mean, data=BC, family="binomial")
+probabilities <- predict(logit, type = "response")
+BC$Predicted <- ifelse(probabilities > .5, "pos", "neg")
+BC$PredictedR <- NA
+BC$PredictedR[BC$Predicted =='pos'] <- 1
+BC$PredictedR[BC$Predicted =='neg'] <- 0
+
+#Convert variables to factors
+BC$PredictedR <- as.factor(BC$PredictedR)
+BC$diagnosisR <- as.factor(BC$diagnosisR)
+
+#create confusion matrix
+conf_mat <- caret::confusionMatrix(BC$PredictedR, BC$diagnosisR)
+conf_mat
+#Confusion Matrix and Statistics
+
+#Reference
+#Prediction   0   1
+#0 334  30
+#1  23 182
+
+#Accuracy : 0.9069          
+#95% CI : (0.8799, 0.9294)
+#No Information Rate : 0.6274          
+#P-Value [Acc > NIR] : <2e-16          
+
+#Kappa : 0.7994          
+
+#Mcnemar's Test P-Value : 0.4098          
+                                          
+           # Sensitivity : 0.9356          
+           # Specificity : 0.8585          
+         #Pos Pred Value : 0.9176          
+         #Neg Pred Value : 0.8878          
+            # Prevalence : 0.6274          
+        # Detection Rate : 0.5870          
+  # Detection Prevalence : 0.6397          
+    #  Balanced Accuracy : 0.8970          
+                                          
+     #  'Positive' Class : 0               
+                                          
+#All cells are above 5 and the accuracy rate is 90%
+
+
+#Logit Linearity
+#gather only numeric variables
+concave_points_mean <- BC %>%
+dplyr::select_if(is.numeric)
+
+#pull them to be fed into predictors
+predictors <- colnames(concave_points_mean)
+
+#create final logit
+concave_points_mean <- concave_points_mean %>%
+mutate(logit=log(probabilities/(1-probabilities)))%>% 
+gather(key= "predictors", value = "predictor.value", -logit)
+
+#Graphing to assess linearity
+ggplot(concave_points_mean, aes(logit, predictor.value))+
+  geom_point(size=.5, alpha=.5)+
+  geom_smooth(method= "loess")+
+  theme_bw()+
+  facet_wrap(~predictors, scales="free_y")
+#what I notice in this that the concave points mean is right along the line and 
+#concavity mean is also in a pretty straight line.
+
+plot(logit$residuals)
+#pretty even distribution.
+
+#check for independence of errors
+dwtest(logit, alternative="two.sided")
+#since the DW value is 1.7677 this meets the assumption of independence errors
+
+#screen for outliers
+infl <- influence.measures(logit)
+summary(infl)
+#these numbers look good with no or low outliers
+
+
+
+
+
+
+
+
 
 
 
