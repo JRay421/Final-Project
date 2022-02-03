@@ -39,7 +39,44 @@ summary(lin_reg)
 summary(lin_reg1)
 
 #Both p-values are significant.  Adjusted R-square value is 60% for concave points mean and 48% for concavity mean.  It appears the concave points mean has a bigger impact.
+#
+###
+#Logistic regression Libraries
+library("caret")
+library("magrittr")
+library("dplyr")
+library("tidyr")
+library("lmtest")
+library("popbio")
+library("e1071")
 
+#Begin Sarah's work#
+#Change name of column with spaces
+#I have the concave points variable as **concave.points_mean**
+
+#Sarah's Smoothness Basic Logistic Model
+summary(BC)
+BC$diagnosisR <- NA
+BC$diagnosisR[BC$diagnosis=='M'] <- 1
+BC$diagnosisR[BC$diagnosis=='B'] <- 0
+smoothlogit <- glm(diagnosis ~ smoothness_mean, data=BC, family="binomial")
+#predict Diagnosis
+probabilitiesmooth <- predict(smoothlogit, type = "response")
+#Recode Predicted variable
+BC$Predicted <- ifelse(probabilities > .5, "pos", "neg")
+BC$PredictedR <- NA
+BC$PredictedR[BC$Predicted =='pos'] <- 1
+BC$PredictedR[BC$Predicted =='neg'] <- 0
+
+#Convert Variables to Factors
+BC$PredictedR <- as.factor(BC$PredictedR)
+BC$diagnosisR <- as.factor(BC$diagnosisR)
+
+#Create Confusion Matrix
+conf_mat <- caret::confusionMatrix(BC$PredictedR, BC$diagnosisR)
+conf_mat
+
+#End Sarah's work#
 
 
 
