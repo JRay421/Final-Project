@@ -284,7 +284,33 @@ summary(infl)
 
 
 
+#histograms for all the values
 
+plotNormalHistogram(BC$area_mean)
+plotNormalHistogram(BC$smoothness_mean)
+plotNormalHistogram(BC$compactness_mean)
+plotNormalHistogram(BC$symmetry_mean)
+plotNormalHistogram(BC$concave_points_mean)
+plotNormalHistogram(BC$concavity_mean)
+
+area_meanSQRT <- sqrt(BC$area_mean)
+plotNormalHistogram(area_meanSQRT)
+area_meanLOG <- log(BC$area_mean)
+plotNormalHistogram(area_meanLOG)
+
+compactness_meanSQRT <- sqrt(BC$compactness_mean)
+plotNormalHistogram(compactness_meanSQRT)
+compactness_meanLOG <- log(BC$compactness_mean)
+plotNormalHistogram(compactness_meanLOG)
+
+concave_points_meanSQRT <- sqrt(BC$concave_points_mean)
+plotNormalHistogram(concave_points_meanSQRT)
+
+
+concavity_meanSQRT <- sqrt(BC$concavity_mean)
+plotNormalHistogram(concavity_meanSQRT)
+
+#smoothness and symmetry didn't need to be adjusted they had a perfect bell curve.
 
 
 
