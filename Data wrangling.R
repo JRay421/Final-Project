@@ -313,6 +313,54 @@ plotNormalHistogram(concavity_meanSQRT)
 #smoothness and symmetry didn't need to be adjusted they had a perfect bell curve.
 
 
+#Modeling using stepwise regression
+#load libraries
+library("dplyr")
+library("ggplot2")
+library("caret")
+library("IDPmisc")
+library("magrittr")
+library("dplyr")
+library("tidyr")
+library("lmtest")
+library("popbio")
+library("e1071")
+library("zoo")
+
+#Change name of column with spaces
+names(breast_cancer)[names(breast_cancer) == "concave points_mean"]<- "concave_points_mean"
+
+#load data
+BC <- dplyr:: select(breast_cancer, c(diagnosis,area_mean, smoothness_mean, compactness_mean, symmetry_mean, concave_points_mean, concavity_mean))
+BC
+
+#Recode the categorical data to numerical data
+BC$diagnosis[BC$diagnosis == "M"] <- "1"
+BC$diagnosis[BC$diagnosis == "B"] <- "0"
+
+#stepwise backward regression
+BCFit1 = lm(diagnosis ~ ., data = BC)
+summary(BCFit1)
+step(BCFit1, direction = 'backward')
+BCFitSome1 = lm(diagnosis ~ area_mean + concave_points_mean, data = BC)
+summary(BCFitSome1)
+#the results tells us that the adjusted R-square value is 0.6168 and the p-value
+# is less than 0.05
+
+
+#stepwise forward regression
+BCFit = lm(diagnosis ~ 1, data = BC)
+summary(BCFit)
+step(BCFit, direction = 'forward', scope = (~area_mean + smoothness_mean + compactness_mean + symmetry_mean + concave_points_mean + concavity_mean))
+
+#examine the model with results of the foward regression
+BCFitSome = lm(diagnosis ~ concave_points_mean + area_mean, data = BC)
+summary(BCFitSome)
+#the adjusted R-squared value is 0.6168 and the p-value is less than 0.05
+#Both forward and backward stepwise regression shows us that the model will be
+#62% accurate and is significant since the p-value is below 0.05.  The model to 
+#be used only keeps two of the 6 variables.
+
 
 
 
