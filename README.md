@@ -2,7 +2,7 @@
 
 <img src="https://www.avera.org/app/files/public/76301/3d-model-of-breast-tumor-shapes-and-sizes.jpg">
 
-Analysis of Breast Cancer statistics in regards to diagnosis - Benign or Metastatic
+Analysis of Breast Cancer statistics and how they factor in to making a diagnosis - Benign or Metastatic
 
 For completion of the Final Project requirement of the Entity Academy / Woz-U Data Science curriculum
 
