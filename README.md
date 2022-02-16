@@ -50,7 +50,7 @@ To analyze our data we completed a stepwise binary linear regression and binary 
 #### Stepwise Binary Linear Regression:
 [Stepwise Regression](https://github.com/JRay421/Final-Project/blob/main/Code/Stepwise%20Regression.R)
 
-
+#### Binary Logistic Regression:
 
 
 ## Week 5: Data Visualization and Reporting
