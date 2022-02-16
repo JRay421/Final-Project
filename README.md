@@ -33,7 +33,7 @@ The dataset was found on Kaggle and was created by M Yasser H
 Data was created into a subset with only our needed variables. We also cleaned and recoded for analysis and machine learning predictions
 
 #### Data Wrangling Notebook:
-[Wrangling Notebook](https://github.com/JRay421/Final-Project/blob/main/Breast%20Cancer.ipynb)
+[Wrangling Notebook](https://github.com/JRay421/Final-Project/blob/main/Code/Breast%20Cancer.ipynb)
 #### Data Wrangling R:
 [Wrangling in R](https://github.com/JRay421/Final-Project/blob/main/Code/Data%20Wrangling.R)
 
