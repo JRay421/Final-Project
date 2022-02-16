@@ -35,7 +35,7 @@ Data was created into a subset with only our needed variables. We also cleaned a
 #### Data Wrangling Notebook:
 [Wrangling Notebook](https://github.com/JRay421/Final-Project/blob/main/Breast%20Cancer.ipynb)
 #### Data Wrangling R:
-[Wrangling in R](https://github.com/JRay421/Final-Project/blob/main/Data%20Wrangling.R)
+[Wrangling in R](https://github.com/JRay421/Final-Project/tree/main/Code)
 
 ## Week 3: Exploratory Analysis
 ##### Completed on February 6, 2022
