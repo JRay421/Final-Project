@@ -36,3 +36,22 @@ Data was created into a subset with only our needed variables. We also cleaned a
 [Wrangling Notebook](https://github.com/JRay421/Final-Project/blob/main/Breast%20Cancer.ipynb)
 #### Data Wrangling R:
 [Wrangling in R](https://github.com/JRay421/Final-Project/blob/main/Data%20Wrangling.R)
+
+## Week 3: Exploratory Analysis
+##### Completed on February 6, 2022
+
+Our exploratory analysis included 
+
+## Week 4: Analyze Data
+##### Completed on February 13, 2022
+
+To analyze our data we completed a stepwise binary linear regression and binary logistic regression to see the influence each variable had on diagnosis.
+
+#### Stepwise Binary Linear Regression:
+[Stepwise Regression](https://github.com/JRay421/Final-Project/blob/main/Code/Stepwise%20Regression.R)
+
+
+
+
+## Week 5: Data Visualization and Reporting
+##### Completed on February 20, 2022
