@@ -12,4 +12,4 @@ breast.cancer$diagnosisR[breast.cancer$diagnosis=='B'] <- 0
 breast.cancer$diagnosisR[breast.cancer$diagnosis=='M'] <- 1
 
 #Create a new dataset with our variables
-breastCancer <- select(breast.cancer, c(diagnosisR,area_mean, smoothness_mean, compactness_mean, symmetry_mean))
+breastCancer <- select(breast.cancer, c(diagnosisR,area_mean, smoothness_mean, compactness_mean, symmetry_mean, concavity_mean, concave.points_mean))
