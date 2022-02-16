@@ -51,7 +51,7 @@ To analyze our data we completed a stepwise binary linear regression and binary 
 [Stepwise Regression](https://github.com/JRay421/Final-Project/blob/main/Code/Stepwise%20Regression.R)
 
 #### Binary Logistic Regression:
-
+* [Smoothness](https://github.com/JRay421/Final-Project/blob/main/Code/Smoothness%20Logistic%20Regression.R)
 
 ## Week 5: Data Visualization and Reporting
 ##### Completed on February 20, 2022
