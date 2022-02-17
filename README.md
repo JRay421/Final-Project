@@ -14,7 +14,7 @@ A collaborative project of Sarah Hagans, Candy Linde, and Jasmine Ray
 The dataset was found on Kaggle and was created by M Yasser H
 
 ### Breast Cancer Dataset
-[Breast Cancer](https://www.kaggle.com/yasserh/breast-cancer-dataset)
+*[Breast Cancer](https://www.kaggle.com/yasserh/breast-cancer-dataset)
 
 ### Variables Used
 #### Independent Variable:
@@ -33,9 +33,9 @@ The dataset was found on Kaggle and was created by M Yasser H
 Data was created into a subset with only our needed variables. We also cleaned and recoded for analysis and machine learning predictions
 
 #### Data Wrangling Notebook:
-[Wrangling Notebook](https://github.com/JRay421/Final-Project/blob/main/Code/Breast%20Cancer.ipynb)
+*[Wrangling Notebook](https://github.com/JRay421/Final-Project/blob/main/Code/Breast%20Cancer.ipynb)
 #### Data Wrangling R:
-[Wrangling in R](https://github.com/JRay421/Final-Project/blob/main/Code/Data%20Wrangling.R)
+*[Wrangling in R](https://github.com/JRay421/Final-Project/blob/main/Code/Data%20Wrangling.R)
 
 ## Week 3: Exploratory Analysis
 ##### Completed on February 6, 2022
@@ -48,7 +48,7 @@ Our exploratory analysis included
 To analyze our data we completed a stepwise binary linear regression and binary logistic regression to see the influence each variable had on diagnosis.
 
 #### Stepwise Binary Linear Regression:
-[Stepwise Regression](https://github.com/JRay421/Final-Project/blob/main/Code/Stepwise%20Regression.R)
+*[Stepwise Regression](https://github.com/JRay421/Final-Project/blob/main/Code/Stepwise%20Regression.R)
 
 #### Binary Logistic Regression:
 * [Smoothness_mean](https://github.com/JRay421/Final-Project/blob/main/Code/Smoothness%20Logistic%20Regression.R)
