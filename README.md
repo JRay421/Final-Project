@@ -53,7 +53,8 @@ To analyze our data we completed a stepwise binary linear regression and binary 
 #### Binary Logistic Regression:
 * [Smoothness](https://github.com/JRay421/Final-Project/blob/main/Code/Smoothness%20Logistic%20Regression.R)
 * [Symmetry](https://github.com/JRay421/Final-Project/blob/main/Code/Symmetry%20Logistic%20Regression.R)
-* [Concavity]()
+* [Concavity](https://github.com/JRay421/Final-Project/blob/main/Code/Concavity%20Logistic%20Regression.R)
+* [Concave Points](https://github.com/JRay421/Final-Project/blob/main/Code/Concave%20Points%20Logistic%20Regression.R)
 
 ## Week 5: Data Visualization and Reporting
 ##### Completed on February 20, 2022
