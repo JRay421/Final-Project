@@ -62,3 +62,5 @@ To analyze our data we completed a stepwise binary linear regression and binary 
 
 ## Week 5: Data Visualization and Reporting
 ##### Completed on February 20, 2022
+*[Visualization](https://github.com/JRay421/Final-Project/blob/main/Visualization%20graphs.R)
+![Histogram plots](https://user-images.githubusercontent.com/89281864/155034131-d70b79b5-ccec-4297-9fe6-31144d96b797.png)
