@@ -14,7 +14,7 @@ A collaborative project of Sarah Hagans, Candy Linde, and Jasmine Ray
 The dataset was found on Kaggle and was created by M Yasser H
 
 ### Breast Cancer Dataset
-* [Breast Cancer](https://www.kaggle.com/yasserh/breast-cancer-dataset)
+* [Breast Cancer](https://github.com/JRay421/Final-Project/blob/main/Data/breast-cancer.csv)
 
 ### Variables Used
 #### Independent Variable:
