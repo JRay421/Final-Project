@@ -41,7 +41,6 @@ Data was created into a subset with only our needed variables. We also cleaned a
 ##### Completed on February 6, 2022
 
 Our exploratory analysis included 
-
 * [Histograms](https://github.com/JRay421/Final-Project/blob/main/Code/Histograms.R)
 
 ## Week 4: Analyze Data
