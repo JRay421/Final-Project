@@ -65,3 +65,4 @@ To analyze our data we completed a stepwise binary linear regression and binary 
 * [Visualization](https://github.com/JRay421/Final-Project/blob/main/Visualization%20graphs)
 
 <img src="https://user-images.githubusercontent.com/89281864/155034131-d70b79b5-ccec-4297-9fe6-31144d96b797.png">
+<img src="https://github.com/JRay421/Final-Project/blob/main/Correlation%20Matrix.png">
