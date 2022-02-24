@@ -41,6 +41,7 @@ Data was created into a subset with only our needed variables. We also cleaned a
 ##### Completed on February 6, 2022
 
 Our exploratory analysis included 
+* [Summary of variables](https://github.com/JRay421/Final-Project/blob/main/Code/Summary%20of%20Values.ipynb)
 * [Histograms](https://github.com/JRay421/Final-Project/blob/main/Code/Histograms.R)
 * [Correlation Matrix](https://github.com/JRay421/Final-Project/blob/main/Code/Correlation%20Matrix.ipynb)
 
