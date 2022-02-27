@@ -70,7 +70,7 @@ To analyze our data we completed a stepwise binary linear regression, binary log
 <img src="https://user-images.githubusercontent.com/89281864/155034131-d70b79b5-ccec-4297-9fe6-31144d96b797.png">
 <img src="https://github.com/JRay421/Final-Project/blob/main/Correlation%20Matrix.png">
 
-## Week 1: Presentation
+## Week 6: Presentation
 ##### Completed on February 24, 2022
 Project was presented via Zoom to Woz U / Entity Academy faculty on February 24, 2022.
 
