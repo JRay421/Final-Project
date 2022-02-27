@@ -48,7 +48,7 @@ Our exploratory analysis included
 ## Week 4: Analyze Data
 ##### Completed on February 13, 2022
 
-To analyze our data we completed a stepwise binary linear regression and binary logistic regression to see the influence each variable had on diagnosis.
+To analyze our data we completed a stepwise binary linear regression, binary logistic regression, and MANOVA to see the influence each variable had on diagnosis.
 
 #### Stepwise Binary Linear Regression:
 * [Stepwise Regression](https://github.com/JRay421/Final-Project/blob/main/Code/Stepwise%20Regression.R)
@@ -61,8 +61,21 @@ To analyze our data we completed a stepwise binary linear regression and binary 
 * [Area_mean](https://github.com/JRay421/Final-Project/blob/main/Code/Area%20Logistic%20Regression.R)
 * [Compactness_mean](https://github.com/JRay421/Final-Project/blob/main/Code/Compactness%20Logistic%20Regression.R)
 
+#### MANOVA:
+* [MANOVA](https://github.com/JRay421/Final-Project/blob/main/Code/MANOVA.R)
+
 ## Week 5: Data Visualization and Reporting
 ##### Completed on February 20, 2022
-* [Visualization](https://github.com/JRay421/Final-Project/blob/main/Visualization%20graphs)
+* [Visualization](https://github.com/JRay421/Final-Project/blob/main/Code/Visualization%20graphs)
 <img src="https://user-images.githubusercontent.com/89281864/155034131-d70b79b5-ccec-4297-9fe6-31144d96b797.png">
 <img src="https://github.com/JRay421/Final-Project/blob/main/Correlation%20Matrix.png">
+
+## Week 1: Presentation
+##### Completed on February 24, 2022
+Project was presented via Zoom to Woz U / Entity Academy faculty on February 24, 2022.
+
+View the presentation powerpoint:
+[Breast Cancer Analysis](https://docs.google.com/presentation/d/1H62riCuHPea5o-3_b6u1SdKllmRA9Nb0yGi7VpRqhFg/edit?usp=sharing)
+
+View the project presentation video on VIMEO:
+[Breast Cancer Analyis Presentation](https://vimeo.com/681680444)
